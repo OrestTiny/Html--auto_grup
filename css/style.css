@@ -2507,6 +2507,10 @@ body {
     display: none;
   }
 
+  .sl_1_wrap {
+    padding: 0px 45px 70px 45px;
+  }
+
 }
 
 @media (max-width: 767px) {
