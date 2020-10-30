@@ -1,0 +1,2388 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.title {
+  margin-left: 105px;
+  font-size: 48px;
+  font-weight: 900;
+  max-width: 787px;
+  position: relative;
+  text-transform: uppercase;
+  line-height: 64px;
+  letter-spacing: 1.2px;
+}
+
+.title span {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 7px;
+  width: 60px;
+  border-radius: 55px;
+  background-color: #D0122D;
+}
+
+.navigation {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+
+}
+
+.navigation_bg {
+  background: #2A2A2A;
+
+}
+
+.nav_wrapp {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 105px 0px 105px;
+}
+
+.nav_button_call {
+  display: flex;
+  align-items: center;
+}
+
+
+.navigation .social img {
+  margin-right: 12px;
+}
+
+.navigation .button_show_phone {
+  width: 173px;
+  height: 30px;
+  background-color: #D0122D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  position: relative;
+}
+
+.navigation .nav_all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 105px;
+  padding-left: 105px;
+}
+
+.navigation .nav_all .navigation_left,
+.navigation .nav_all .navigation_right {
+  display: flex;
+}
+
+.navigation .nav_all .navigation_right {
+  margin-right: 100px;
+  position: relative;
+}
+
+.navigation .nav_all span {
+  margin-right: 20px;
+}
+
+.navigation .button_style {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline-style: none;
+  background-color: #D0122D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+}
+
+.navigation .button_style .button_style_wrap {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  cursor: default;
+  padding-top: 5%;
+}
+
+.navigation .button_style .button_style_wrap .order_phone {
+  background: url('../img/btn-phone-bg.png') center no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 769px;
+  max-height: 640px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 50px 50px 50px;
+  text-align: center;
+
+}
+
+.navigation .button_style .button_style_wrap .order_phone input,
+.navigation .button_style .button_style_wrap .order_phone button {
+  max-width: 405px;
+  width: 100%;
+}
+
+.navigation .button_style .button_style_wrap .order_phone input {
+  max-width: 405px;
+  height: 70px;
+  width: 100%;
+  border: none;
+  outline: none;
+  margin-bottom: 30px;
+  background-color: #0006;
+  color: white;
+
+}
+
+.navigation .button_style .button_style_wrap h2 {
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.navigation .button_style .button_style_wrap p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navigation .button_style img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.navigation_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 105px 0px 105px;
+}
+
+.navigation_main .logo {
+  margin: 30px 0px 30px 0px;
+}
+
+.navigation_main .navigation_bar {
+  display: flex;
+  padding-right: 79px;
+  margin-bottom: -3px;
+}
+
+.navigation_main .navigation_bar div {
+  margin-left: 43px;
+}
+
+.navigation_main .navigation_bar span {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .2s all;
+  position: relative;
+}
+
+.navigation_main .navigation_bar span:hover {
+  color: #D0122D;
+}
+
+.navigation_main .navigation_bar span:hover::after {
+  left: -10px;
+  opacity: 1;
+}
+
+.navigation_main .navigation_bar span:hover::before {
+  right: -10px;
+  opacity: 1;
+}
+
+.navigation_main .navigation_bar span::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -25px;
+  width: 20px;
+  height: 2px;
+  border-radius: 15px;
+  background-color: #D0122D;
+  opacity: 0;
+  transition: .3s all;
+}
+
+.navigation_main .navigation_bar span::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  right: -25px;
+  width: 20px;
+  height: 2px;
+  border-radius: 15px;
+  background-color: #D0122D;
+  opacity: 0;
+  transition: .3s all;
+}
+
+.tabs_content {
+  position: relative;
+  height: 820px;
+}
+
+.tabs_content .tabs {
+  position: absolute;
+  left: 250px;
+  top: 100px;
+}
+
+.tabs_content .tabs .tab-pane.active {
+  background: url("../img/usa_map.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  max-width: 1420px;
+  width: 100%;
+  height: 641px;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tabs_content .tabs .tab-pane.active .tab-content-text {
+  /* position: absolute;
+  left: 70px;
+  top: 168px; */
+  padding-left: 20px;
+}
+
+.tabs_content .tabs .tab-pane.active .tab-content-text ul {
+  list-style: none;
+}
+
+.tabs_content .tabs .tab-pane.active .tab-content-text ul li {
+  position: relative;
+  border: 1px;
+  border-bottom-style: dotted;
+  border-color: rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 0px 11px 0px;
+  margin-bottom: 2px;
+}
+
+.tabs_content .tabs .tab-pane.active .tab-content-text ul li::before {
+  content: "";
+  position: absolute;
+  background-color: #D0122D;
+  height: 7px;
+  width: 7px;
+  display: inline-block;
+  left: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tabs_content .tabs .tab-pane.active .tab-content-img {
+  /* position: absolute;
+  right: 50px;
+  top: 55px; */
+  z-index: 1;
+  position: relative;
+}
+
+.tabs_content .tabs .tab-pane.active .tab-content-img img {
+  width: 100%;
+}
+
+.tabs_content .tabs .tab-pane.active .tab-content-img span {
+  height: 164px;
+  width: 712px;
+  background-color: #D0122D;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tabs_content .tabs .nav {
+  margin-bottom: 25px !important;
+}
+
+.tabs_content .nav-pills .nav-item:nth-child(-n+5) {
+  margin-right: 26px;
+}
+
+.tabs_content .nav-pills .nav-item .nav-link {
+  width: 215px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px;
+  background-color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border: 3px solid #D0122D;
+  color: black;
+}
+
+.tabs_content .nav-pills .nav-item .nav-link.active {
+  background-color: #D0122D;
+  color: white;
+}
+
+.choice_car {
+  margin-top: 90px;
+}
+
+.choice_car .title {
+  margin-left: 105px;
+  font-size: 48px;
+  font-weight: 900;
+  max-width: 807px;
+  position: relative;
+  text-transform: uppercase;
+  line-height: 60px;
+}
+
+.choice_car .title span {
+  position: absolute;
+  left: 0;
+  bottom: -14px;
+  height: 7px;
+  width: 60px;
+  border-radius: 55px;
+  background-color: #D0122D;
+}
+
+.choice_car .choice_car_img {
+  margin: 65px 105px 0px 105px;
+}
+
+
+.choice_car .block-cont {
+  background: url('../img/logo-bg.png');
+  height: 757px;
+
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  padding: 105px 50px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.choice_car .block-cont.bk-2 {
+  padding-top: 55px;
+}
+
+
+.choice_car .block-text {
+  padding-left: 25px;
+  color: white;
+  padding-top: 70px;
+}
+
+.choice_car .block-text li::before {
+  content: "";
+  position: absolute;
+  background-color: #D0122D;
+  height: 7px;
+  width: 7px;
+  display: inline-block;
+  left: -18px;
+  top: 9px;
+}
+
+.choice_car .block-text li {
+  list-style: none;
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+
+.choice_car .block-btn img {
+
+  max-width: 450px;
+  width: 100%;
+  max-height: 213px;
+  height: 100%;
+}
+
+
+.price_car_block {
+  margin-top: 90px;
+}
+
+.price_car_block .title {
+  margin-left: 105px;
+  font-size: 48px;
+  font-weight: 900;
+  max-width: 787px;
+  position: relative;
+  text-transform: uppercase;
+  line-height: 70px;
+  letter-spacing: .7px;
+}
+
+.price_car_block .title span {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 7px;
+  width: 60px;
+  border-radius: 55px;
+  background-color: #D0122D;
+}
+
+.price_car_block .price_car_calc {
+  margin: 70px 0px 0px 245px;
+  max-width: 1420px;
+  width: 100%;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.1);
+  padding: 38px 50px 50px 50px;
+
+}
+
+.price_car_block .price_car_calc .set_calc,
+.price_car_block .price_car_calc .get_calc {
+  display: flex;
+  flex-direction: column;
+  padding-right: 58px;
+}
+
+.price_car_block .price_car_calc .price_car,
+.price_car_block .price_car_calc .repair_car,
+.price_car_block .price_car_calc .engine_car,
+.price_car_block .price_car_calc .age_car,
+.price_car_block .price_car_calc .auction_car {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #C9C9C9;
+  padding: 10px 25px;
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+
+.price_car_block .price_car_calc .price_car::before,
+.price_car_block .price_car_calc .repair_car::before,
+.price_car_block .price_car_calc .engine_car::before,
+.price_car_block .price_car_calc .age_car::before,
+.price_car_block .price_car_calc .auction_car::before {
+  content: 'Стоимость автомобиля';
+  position: absolute;
+  top: -40px;
+  left: -5px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2A2A2A;
+}
+
+.price_car_block .price_car_calc .price_car span,
+.price_car_block .price_car_calc .repair_car span,
+.price_car_block .price_car_calc .engine_car span,
+.price_car_block .price_car_calc .age_car span,
+.price_car_block .price_car_calc .auction_car span {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.price_car_block .price_car_calc .price_car .block_price,
+.price_car_block .price_car_calc .price_car .block_fuel,
+.price_car_block .price_car_calc .repair_car .block_price,
+.price_car_block .price_car_calc .repair_car .block_fuel,
+.price_car_block .price_car_calc .engine_car .block_price,
+.price_car_block .price_car_calc .engine_car .block_fuel,
+.price_car_block .price_car_calc .age_car .block_price,
+.price_car_block .price_car_calc .age_car .block_fuel,
+.price_car_block .price_car_calc .auction_car .block_price,
+.price_car_block .price_car_calc .auction_car .block_fuel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price_car_block .price_car_calc .price_car .block_price .dollar,
+.price_car_block .price_car_calc .price_car .block_price .euro,
+.price_car_block .price_car_calc .price_car .block_fuel .dollar,
+.price_car_block .price_car_calc .price_car .block_fuel .euro,
+.price_car_block .price_car_calc .repair_car .block_price .dollar,
+.price_car_block .price_car_calc .repair_car .block_price .euro,
+.price_car_block .price_car_calc .repair_car .block_fuel .dollar,
+.price_car_block .price_car_calc .repair_car .block_fuel .euro,
+.price_car_block .price_car_calc .engine_car .block_price .dollar,
+.price_car_block .price_car_calc .engine_car .block_price .euro,
+.price_car_block .price_car_calc .engine_car .block_fuel .dollar,
+.price_car_block .price_car_calc .engine_car .block_fuel .euro,
+.price_car_block .price_car_calc .age_car .block_price .dollar,
+.price_car_block .price_car_calc .age_car .block_price .euro,
+.price_car_block .price_car_calc .age_car .block_fuel .dollar,
+.price_car_block .price_car_calc .age_car .block_fuel .euro,
+.price_car_block .price_car_calc .auction_car .block_price .dollar,
+.price_car_block .price_car_calc .auction_car .block_price .euro,
+.price_car_block .price_car_calc .auction_car .block_fuel .dollar,
+.price_car_block .price_car_calc .auction_car .block_fuel .euro {
+  height: 40px;
+  width: 62px;
+  border: 1px solid #D0122D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.price_car_block .price_car_calc .price_car .block_price .dollar.active,
+.price_car_block .price_car_calc .price_car .block_price .euro.active,
+.price_car_block .price_car_calc .price_car .block_price .gasoline.active,
+.price_car_block .price_car_calc .price_car .block_price .diesel.active,
+.price_car_block .price_car_calc .price_car .block_fuel .dollar.active,
+.price_car_block .price_car_calc .price_car .block_fuel .euro.active,
+.price_car_block .price_car_calc .price_car .block_fuel .gasoline.active,
+.price_car_block .price_car_calc .price_car .block_fuel .diesel.active,
+.price_car_block .price_car_calc .repair_car .block_price .dollar.active,
+.price_car_block .price_car_calc .repair_car .block_price .euro.active,
+.price_car_block .price_car_calc .repair_car .block_price .gasoline.active,
+.price_car_block .price_car_calc .repair_car .block_price .diesel.active,
+.price_car_block .price_car_calc .repair_car .block_fuel .dollar.active,
+.price_car_block .price_car_calc .repair_car .block_fuel .euro.active,
+.price_car_block .price_car_calc .repair_car .block_fuel .gasoline.active,
+.price_car_block .price_car_calc .repair_car .block_fuel .diesel.active,
+.price_car_block .price_car_calc .engine_car .block_price .dollar.active,
+.price_car_block .price_car_calc .engine_car .block_price .euro.active,
+.price_car_block .price_car_calc .engine_car .block_price .gasoline.active,
+.price_car_block .price_car_calc .engine_car .block_price .diesel.active,
+.price_car_block .price_car_calc .engine_car .block_fuel .dollar.active,
+.price_car_block .price_car_calc .engine_car .block_fuel .euro.active,
+.price_car_block .price_car_calc .engine_car .block_fuel .gasoline.active,
+.price_car_block .price_car_calc .engine_car .block_fuel .diesel.active,
+.price_car_block .price_car_calc .age_car .block_price .dollar.active,
+.price_car_block .price_car_calc .age_car .block_price .euro.active,
+.price_car_block .price_car_calc .age_car .block_price .gasoline.active,
+.price_car_block .price_car_calc .age_car .block_price .diesel.active,
+.price_car_block .price_car_calc .age_car .block_fuel .dollar.active,
+.price_car_block .price_car_calc .age_car .block_fuel .euro.active,
+.price_car_block .price_car_calc .age_car .block_fuel .gasoline.active,
+.price_car_block .price_car_calc .age_car .block_fuel .diesel.active,
+.price_car_block .price_car_calc .auction_car .block_price .dollar.active,
+.price_car_block .price_car_calc .auction_car .block_price .euro.active,
+.price_car_block .price_car_calc .auction_car .block_price .gasoline.active,
+.price_car_block .price_car_calc .auction_car .block_price .diesel.active,
+.price_car_block .price_car_calc .auction_car .block_fuel .dollar.active,
+.price_car_block .price_car_calc .auction_car .block_fuel .euro.active,
+.price_car_block .price_car_calc .auction_car .block_fuel .gasoline.active,
+.price_car_block .price_car_calc .auction_car .block_fuel .diesel.active {
+  background-color: #D0122D;
+  color: white;
+}
+
+.price_car_block .price_car_calc .price_car .block_price .dollar,
+.price_car_block .price_car_calc .price_car .block_price .gasoline,
+.price_car_block .price_car_calc .price_car .block_price .diesel,
+.price_car_block .price_car_calc .price_car .block_fuel .dollar,
+.price_car_block .price_car_calc .price_car .block_fuel .gasoline,
+.price_car_block .price_car_calc .price_car .block_fuel .diesel,
+.price_car_block .price_car_calc .repair_car .block_price .dollar,
+.price_car_block .price_car_calc .repair_car .block_price .gasoline,
+.price_car_block .price_car_calc .repair_car .block_price .diesel,
+.price_car_block .price_car_calc .repair_car .block_fuel .dollar,
+.price_car_block .price_car_calc .repair_car .block_fuel .gasoline,
+.price_car_block .price_car_calc .repair_car .block_fuel .diesel,
+.price_car_block .price_car_calc .engine_car .block_price .dollar,
+.price_car_block .price_car_calc .engine_car .block_price .gasoline,
+.price_car_block .price_car_calc .engine_car .block_price .diesel,
+.price_car_block .price_car_calc .engine_car .block_fuel .dollar,
+.price_car_block .price_car_calc .engine_car .block_fuel .gasoline,
+.price_car_block .price_car_calc .engine_car .block_fuel .diesel,
+.price_car_block .price_car_calc .age_car .block_price .dollar,
+.price_car_block .price_car_calc .age_car .block_price .gasoline,
+.price_car_block .price_car_calc .age_car .block_price .diesel,
+.price_car_block .price_car_calc .age_car .block_fuel .dollar,
+.price_car_block .price_car_calc .age_car .block_fuel .gasoline,
+.price_car_block .price_car_calc .age_car .block_fuel .diesel,
+.price_car_block .price_car_calc .auction_car .block_price .dollar,
+.price_car_block .price_car_calc .auction_car .block_price .gasoline,
+.price_car_block .price_car_calc .auction_car .block_price .diesel,
+.price_car_block .price_car_calc .auction_car .block_fuel .dollar,
+.price_car_block .price_car_calc .auction_car .block_fuel .gasoline,
+.price_car_block .price_car_calc .auction_car .block_fuel .diesel {
+  margin-right: 10px;
+}
+
+.price_car_block .price_car_calc .price_car .block_price .gasoline,
+.price_car_block .price_car_calc .price_car .block_price .diesel,
+.price_car_block .price_car_calc .price_car .block_price .electro,
+.price_car_block .price_car_calc .price_car .block_fuel .gasoline,
+.price_car_block .price_car_calc .price_car .block_fuel .diesel,
+.price_car_block .price_car_calc .price_car .block_fuel .electro,
+.price_car_block .price_car_calc .repair_car .block_price .gasoline,
+.price_car_block .price_car_calc .repair_car .block_price .diesel,
+.price_car_block .price_car_calc .repair_car .block_price .electro,
+.price_car_block .price_car_calc .repair_car .block_fuel .gasoline,
+.price_car_block .price_car_calc .repair_car .block_fuel .diesel,
+.price_car_block .price_car_calc .repair_car .block_fuel .electro,
+.price_car_block .price_car_calc .engine_car .block_price .gasoline,
+.price_car_block .price_car_calc .engine_car .block_price .diesel,
+.price_car_block .price_car_calc .engine_car .block_price .electro,
+.price_car_block .price_car_calc .engine_car .block_fuel .gasoline,
+.price_car_block .price_car_calc .engine_car .block_fuel .diesel,
+.price_car_block .price_car_calc .engine_car .block_fuel .electro,
+.price_car_block .price_car_calc .age_car .block_price .gasoline,
+.price_car_block .price_car_calc .age_car .block_price .diesel,
+.price_car_block .price_car_calc .age_car .block_price .electro,
+.price_car_block .price_car_calc .age_car .block_fuel .gasoline,
+.price_car_block .price_car_calc .age_car .block_fuel .diesel,
+.price_car_block .price_car_calc .age_car .block_fuel .electro,
+.price_car_block .price_car_calc .auction_car .block_price .gasoline,
+.price_car_block .price_car_calc .auction_car .block_price .diesel,
+.price_car_block .price_car_calc .auction_car .block_price .electro,
+.price_car_block .price_car_calc .auction_car .block_fuel .gasoline,
+.price_car_block .price_car_calc .auction_car .block_fuel .diesel,
+.price_car_block .price_car_calc .auction_car .block_fuel .electro {
+  height: 40px;
+  padding: 10px 30px;
+  border: 1px solid #D0122D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.price_car_block .price_car_calc .repair_car:before {
+  content: 'Приблизительная стоимость ремонта';
+}
+
+.price_car_block .price_car_calc .engine_car:before {
+  content: 'Двигатель';
+}
+
+.price_car_block .price_car_calc .age_car {
+  padding: 0px;
+}
+
+.price_car_block .price_car_calc .age_car::before {
+  content: 'Возраст авто';
+}
+
+.price_car_block .price_car_calc .age_car::after {
+  content: '\003E';
+  position: absolute;
+  top: 9px;
+  right: 5px;
+  height: 39px;
+  width: 58px;
+  background: #D0122D;
+  cursor: pointer;
+  pointer-events: none;
+  transform: rotate(90deg) scaleY(1.75);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 100;
+  line-height: 1px;
+  padding: 0 0 4px 0;
+}
+
+.price_car_block .price_car_calc .auction_car {
+  display: flex;
+  justify-content: space-between;
+  border: 0;
+  padding: 10px 0;
+}
+
+.price_car_block .price_car_calc .auction_car::before {
+  content: 'Аукцион';
+}
+
+.price_car_block .price_car_calc .auction_car .auc_copart,
+.price_car_block .price_car_calc .auction_car .auc_iaai {
+  height: 60px;
+  border: 1px solid #D0122D;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.price_car_block .price_car_calc .auction_car .auc_copart.active,
+.price_car_block .price_car_calc .auction_car .auc_iaai.active {
+  background-color: #D0122D;
+  color: white;
+}
+
+.price_car_block .price_car_calc .auction_car .auc_copart {
+  margin-right: 21px;
+}
+
+.price_car_block .price_car_calc .download {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price_car_block .price_car_calc .download span {
+  margin-right: 21px;
+
+  font-size: 18px;
+  width: 100%;
+  font-weight: 500;
+}
+
+.price_car_block .price_car_calc .download .button_style {
+  height: 60px;
+  width: 100%;
+  border: 0;
+  outline-style: none;
+  background-color: #D0122D;
+  color: white;
+  font-size: 18px;
+}
+
+.price_car_block .price_car_calc #age_car {
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 25px;
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+  position: relative;
+}
+
+.price_car_block .price_car_calc #age_car option {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.price_car_block .price_car_calc .get_calc {
+  box-shadow: 5px 7px 15px 0px rgba(0, 0, 0, 0.1);
+  padding: 46px 50px;
+  color: #888888;
+  font-size: 16px;
+
+  margin-left: -33px;
+}
+
+.price_car_block .price_car_calc .get_calc .get_calc_title {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  border: 1px;
+  border-bottom-style: dotted;
+  border-color: rgba(0, 0, 0, 0.2);
+
+}
+
+.price_car_block .price_car_calc .get_calc .get_calc_title p {
+  color: black;
+  font-weight: 500;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.price_car_block .price_car_calc .get_calc .get_calc_end {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.price_car_block .price_car_calc .get_calc .get_calc_end p {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.price_car_info {
+  margin-top: 90px;
+  padding-bottom: 45px;
+}
+
+.price_car_info .title {
+  letter-spacing: 1.5px;
+  margin-left: 105px;
+  font-size: 48px;
+  font-weight: 900;
+  position: relative;
+  text-transform: uppercase;
+  line-height: 64px;
+  max-width: 950px;
+}
+
+.price_car_info .title span {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 7px;
+  width: 60px;
+  border-radius: 55px;
+  background-color: #D0122D;
+}
+
+.price_car_info .car_block {
+  margin-bottom: 50px;
+}
+
+.price_car_info .price_car_info_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1420px;
+  margin: 65px auto 50px auto;
+}
+
+.price_car_info .price_car_info_header div {
+  height: 50px;
+  max-width: 215px;
+  width: 100%;
+  border: 3px solid #D0122D;
+  color: black;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.price_car_info .price_car_info_header div.active {
+  background-color: #D0122D;
+  color: white;
+}
+
+.price_car_info .price_car_info_body {
+  margin: 0px 105px;
+}
+
+.price_car_info .price_car_info_body .car_block_img {
+  position: relative;
+  overflow: hidden;
+
+}
+
+.price_car_info .price_car_info_body .car_block_img img {
+  transition: .5s ease-in-out;
+}
+
+.price_car_info .price_car_info_body .car_block_img:hover img {
+  transform: scale(1.05);
+}
+
+.car_block_img img {
+  width: 100%;
+}
+
+.price_car_info .price_car_info_body .car_block_img span {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 60%;
+  background-color: rgba(208, 18, 45, 0.7);
+  cursor: pointer;
+}
+
+.price_car_info .price_car_info_body .car_block_img span::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 17px;
+  width: 9.69px;
+  background: url("../img/arrow.svg");
+}
+
+.price_car_info .car_block_text {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 15px;
+}
+
+.price_car_info .car_block_text div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.price_car_info .car_block_text .car_block_text_price {
+  color: #888888;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+}
+
+.price_car_info .car_block_text .car_block_text_name,
+.price_car_info .car_block_text .car_block_text_price_ua {
+  font-weight: 900;
+}
+
+.price_car_info .car_block_text .car_block_text_price_ua span {
+  font-size: 24px;
+}
+
+.price_car_info .car_block_text img {
+  margin-left: 5px;
+}
+
+.car_case {
+  background: #F9F9F9;
+  padding-top: 85px;
+  padding-bottom: 20px;
+}
+
+.car_case .block_car_case_body {
+  margin: 0px 105px 50px 105px;
+}
+
+.car_case .title {
+  margin-left: 105px;
+  font-size: 48px;
+  font-weight: 900;
+  max-width: 787px;
+  position: relative;
+  text-transform: uppercase;
+  line-height: 64px;
+  letter-spacing: 1.6px;
+  margin-bottom: 60px;
+}
+
+.car_case .title span {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 7px;
+  width: 60px;
+  border-radius: 55px;
+  background-color: #D0122D;
+}
+
+.car_case .car_block_img {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.car_case .car_block_img span {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 60%;
+  background-color: rgba(208, 18, 45, 0.7);
+  cursor: pointer;
+}
+
+.car_case .car_block_img span::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 17px;
+  width: 9.69px;
+  background: url("../img/arrow.svg");
+}
+
+.car_case .car_block_img p {
+  position: absolute;
+  top: 37px;
+  left: 50px;
+  color: white;
+  font-size: 24px;
+  font-weight: 900;
+  padding: 0%;
+  margin: 0;
+}
+
+.question_and_answer {
+  padding-top: 90px;
+  padding-bottom: 73px;
+}
+
+.question_and_answer .question_and_answer__ {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 65px;
+
+}
+
+.question_and_answer_img {
+  background: url('../img/car_3.png') no-repeat;
+  min-height: 1446px;
+  height: 100%;
+  width: 100%;
+  margin-left: 35px;
+  background-position: center;
+}
+
+
+
+.question_and_answer .question_and_answer_body {
+  width: 100%;
+  margin-left: 105px;
+  color: #888888;
+}
+
+.question_and_answer .question_and_answer_body .block {
+  width: 840px;
+}
+
+.question_and_answer_body .block:not(:first-child) {
+  margin-top: 8px;
+}
+
+.question_and_answer .question_and_answer_body .block_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 59.5px;
+  padding: 0px 50px;
+  cursor: pointer;
+  border: 1px solid #C9A74D;
+  margin-bottom: 30px;
+}
+
+.question_and_answer .question_and_answer_body .block_title span {
+  display: flex;
+  transform: rotate(-180deg);
+}
+
+.question_and_answer .question_and_answer_body .block_title .arrow_color {
+  fill: #fff;
+}
+
+.question_and_answer .question_and_answer_body .block_title .block_title_left {
+  display: flex;
+  align-items: center;
+}
+
+.question_and_answer .question_and_answer_body .block_title .block_title_left span {
+  transform: rotate(0);
+}
+
+.question_and_answer .question_and_answer_body .block_title .block_title_left span svg {
+  margin-right: 15px;
+}
+
+.question_and_answer .question_and_answer_body .block_title .arrow_rotate {
+  transform: rotate(0);
+}
+
+.question_and_answer .question_and_answer_body .block_title.block_title_rotate {
+  background-color: #D0122D;
+  color: white;
+  border: 0;
+}
+
+.question_and_answer .question_and_answer_body .block_content {
+  display: none;
+  padding: 0px 50px 50px 50px;
+}
+
+.services {
+  background: #F9F9F9;
+  padding-top: 85px;
+
+}
+
+.services .title {
+  letter-spacing: 1.3px;
+}
+
+.services_body_wrap {
+  padding: 142px 105px 190px 105px;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.services .services_body {
+  min-width: 1710px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services .services_body .block_info {
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.1);
+  background: white;
+  max-width: 405px;
+  width: 100%;
+  padding: 41px 45px 10px 49px;
+}
+
+.services .services_body .block_info ul {
+  list-style: none;
+  font-size: 16px;
+}
+
+.services .services_body .block_info ul li {
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+  padding-bottom: 8px;
+  margin-bottom: 11.8px;
+}
+
+.services .services_body .block_info ul li:nth-last-child(1) {
+  border: 0;
+  margin-bottom: 0;
+}
+
+.services .services_body .block_economy {
+  position: relative;
+  margin-left: 15px;
+}
+
+.services .services_body .block_economy .btn {
+  position: absolute;
+  bottom: -85px;
+  max-width: 302px;
+  width: 100%;
+  background: #D0122D;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+  color: white;
+  cursor: pointer;
+}
+
+.services .services_body .block_services_title {
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  transform: translate(-50%, -50%);
+  display: block;
+  max-width: 305px;
+  width: 100%;
+  align-items: center;
+  color: #888888;
+  font-size: 16px;
+  text-align: center;
+}
+
+.services .services_body .block_services_title span {
+  font-size: 24px;
+  font-weight: 900;
+  color: black;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.services .services_body .block_economy_body {
+  padding: 30px 28.5px 10px 28.5px;
+  background-color: white;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.services .services_body .block_economy_body ul li {
+  position: relative;
+  list-style: none;
+  width: 245px;
+  height: 46px;
+  background: #1ECA77;
+  border-bottom: 2px solid white;
+}
+
+.services .services_body .block_economy_body ul li::before {
+  content: '';
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 10px;
+  width: 20px;
+  display: inline-block;
+  border-left: 3px solid white;
+  border-bottom: 3px solid white;
+  transform: rotate(-40deg);
+}
+
+.services .services_body .block_economy_body ul li.no {
+  background: #9F0F23;
+}
+
+.services .services_body .block_economy_body ul li.no::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  height: 2px;
+  width: 25px;
+  display: inline-block;
+  background: white;
+  border-radius: 25px;
+  transform: rotate(-45deg);
+  border: 0;
+}
+
+.services .services_body .block_economy_body ul li.no::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  height: 2px;
+  width: 25px;
+  display: inline-block;
+  background: white;
+  border-radius: 25px;
+  transform: rotate(45deg);
+  border: none;
+}
+
+.carousel_reviews {
+  padding-bottom: 90px;
+}
+
+.carousel_reviews .title {
+  margin: 85px 105px 110px 105px;
+}
+
+.carousel_reviews .carousel_reviews_wrap {
+  padding: 0px 105px;
+}
+
+.carousel_reviews .owl-item {
+  width: auto;
+}
+
+.carousel_reviews .item {
+  padding: 10px 5px;
+}
+
+.carousel_reviews .owl-nav {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.carousel_reviews .owl-nav .owl-prev {
+  height: 48px;
+  width: 48px;
+  background: #D0122D !important;
+  position: relative;
+  outline-style: none;
+  transition: .3s ease-in-out;
+}
+
+.carousel_reviews .owl-nav .owl-prev span {
+  color: white;
+  font-size: 0;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel_reviews .owl-nav .owl-prev span::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-right: 3px solid white;
+  border-top: 3px solid white;
+  transform: rotate(-135deg);
+}
+
+.carousel_reviews .owl-nav .owl-next {
+  height: 48px;
+  width: 48px;
+  background: #D0122D !important;
+  position: relative;
+  transition: .3s ease-in-out;
+  outline-style: none;
+}
+
+.carousel_reviews .owl-nav .owl-next span {
+  color: white;
+  font-size: 0;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel_reviews .owl-nav .owl-next span::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-right: 3px solid white;
+  border-top: 3px solid white;
+  transform: rotate(45deg);
+}
+
+.carousel_reviews .owl-prev.disabled,
+.carousel_reviews .owl-next.disabled {
+  background: rgba(0, 0, 0, 0.25) !important;
+}
+
+.carousel_reviews .owl-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel_reviews .owl-dots .owl-dot {
+  width: 20px;
+  height: 16px;
+  background: rgba(0, 0, 0, 0.25) !important;
+  margin-right: 5px;
+  border: 0;
+  outline-style: none;
+  transition: .3s ease-in-out;
+}
+
+.carousel_reviews .owl-dots .owl-dot:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.carousel_reviews .owl-dots .owl-dot.active {
+  height: 26px;
+  width: 21px;
+  background: #D0122D !important;
+}
+
+.carousel_reviews .box {
+  max-width: 405px;
+  width: 100%;
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 31px 20px 20px 20px;
+  margin: auto;
+}
+
+.carousel_reviews .box .box__img {
+  width: 150px;
+  height: 150px;
+}
+
+.carousel_reviews .box .box__img img {
+  border-radius: 60%;
+}
+
+.carousel_reviews .box .box__title {
+  font-size: 18px;
+  font-weight: 900;
+  margin: 14px 0px 0px 0px;
+}
+
+.carousel_reviews .box .box__text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #787375;
+  text-align: center;
+  padding: 0px 5px;
+  line-height: 1.3;
+}
+
+.staff {
+  background: url(../img/pic.png);
+  background-repeat: repeat;
+  padding-top: 99px;
+}
+
+.staff .title {
+  margin-bottom: 63px;
+}
+
+.staff .staff_block {
+  margin: 0px 105px;
+}
+
+.staff .staff_block .block {
+  margin-bottom: 55px;
+}
+
+.staff .staff_block .staff_block_name {
+  margin-top: 25px;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.staff .staff_block .staff_block_text {
+  font-size: 16px;
+  color: #888888;
+  font-weight: 400;
+}
+
+.staff_block .staff_block_img img {
+  width: 100%;
+}
+
+.footer .order {
+  background: url(../img/footer_top.png);
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer .order .title {
+  color: white;
+  text-align: center;
+  padding-bottom: 22px;
+  margin-top: 85px;
+  margin-left: 0;
+  max-width: 815px;
+  line-height: 1.2;
+}
+
+.footer .order .title span {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer .order .order_input {
+  width: 100%;
+  margin-top: 55px;
+  max-width: 1273px;
+}
+
+.footer .order .order_input form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .order .order_input input {
+  max-width: 404px;
+  width: 100%;
+  height: 70px;
+  background: 0;
+  border: 1px solid #888888;
+  color: white;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.4);
+  outline-style: none;
+  padding-left: 25px;
+}
+
+.footer .order .order_input input::placeholder {
+  color: white;
+}
+
+.footer .order .order_input button {
+  max-width: 404px;
+  width: 100%;
+  height: 70px;
+  border: 0;
+  background-color: #D0122D;
+  color: white;
+  font-size: 16px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px;
+}
+
+.footer .order .order_input button img {
+  margin-right: 10px;
+}
+
+.group {
+  background: url(../img/footer_bot.png);
+  height: 563px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 42px;
+  margin-top: -5px;
+  position: relative;
+}
+
+.group .group_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 250px;
+}
+
+.group .menu {
+  padding-left: 133px;
+  margin-top: -4px;
+}
+
+.group .group_wrap .logo_manu {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-top: 42px;
+}
+
+.group .group_wrap .logo_manu .logo {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+.group .group_wrap .logo_manu .logo span {
+  max-width: 305px;
+  color: #888888;
+  margin-top: 27px;
+  line-height: 1;
+}
+
+.group .group_wrap .logo_manu .menu li {
+  list-style: none;
+  color: white;
+}
+
+.group .group_wrap .logo_manu .menu span {
+  font-size: 24px;
+  font-weight: 900;
+  color: white;
+}
+
+.group .telephone {
+  padding-top: 48px;
+}
+
+.group .telephone .btn {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline-style: none;
+  background-color: #D0122D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 0;
+  color: white;
+
+}
+
+.group .telephone .btn img {
+  margin-right: 10px;
+}
+
+.group .telephone .telephone_info {
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.group .telephone .telephone_info div {
+  position: relative;
+  color: white;
+}
+
+.group .telephone .telephone_info li {
+  list-style: none;
+  color: white;
+}
+
+.group .telephone .telephone_info span {
+  position: absolute;
+  left: -25px;
+  top: -2px;
+}
+
+.group .group_wrap_down {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 250px;
+  color: white;
+  padding-top: 50px;
+}
+
+.group .group_wrap_down a {
+  text-decoration: underline;
+  color: white;
+}
+
+.group .arrow_up {
+  right: 52px;
+  height: 70px;
+  width: 70px;
+  border-radius: 60%;
+  position: absolute;
+  background: #D0122D;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(calc(-50% - 15px));
+}
+
+.group .arrow_up::before {
+  content: '';
+  width: 22px;
+  height: 22px;
+  border-left: 3px solid white;
+  border-top: 3px solid white;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.slider .slider_wrap {
+  position: relative;
+}
+
+.slider .slider_wrap .drcor-dot-3-4 {
+  height: 140px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 105px;
+}
+
+.slider .slider_wrap .drcor-dot-3-4 .drcor-dot-3 {
+  height: 4px;
+  width: 4px;
+  border-radius: 60%;
+  background-color: #616161;
+}
+
+.slider .slider_wrap .drcor-dot-3-4 .drcor-dot-4 {
+  height: 4px;
+  width: 4px;
+  border-radius: 60%;
+  background-color: #616161;
+  position: absolute;
+  bottom: 0;
+}
+
+.slider .slider_wrap .decor {
+  margin-right: 105px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 47px;
+  height: 727px;
+  width: 100%;
+  border-top: 2px solid #f1f1f1;
+  border-right: 2px solid #f1f1f1;
+}
+
+.slider .slider_wrap .decor img {
+  position: absolute;
+  right: -7px;
+  bottom: -30px;
+  width: 13px;
+  height: 16px;
+}
+
+.slider .slider_wrap .decor::before {
+  content: '';
+  height: 15px;
+  width: 1.5px;
+  background-color: #D0122D;
+  position: absolute;
+  right: -2px;
+  top: -8px;
+  border-radius: 25px;
+}
+
+.slider .slider_wrap .decor::after {
+  content: '';
+  height: 1.5px;
+  width: 15px;
+  background-color: #D0122D;
+  position: absolute;
+  right: -8px;
+  top: -2px;
+  border-radius: 25px;
+}
+
+.slider .slider_wrap .decor .decor-dot {
+  height: 4px;
+  width: 4px;
+  border-radius: 60%;
+  background-color: #616161;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-75%, -50%);
+}
+
+.slider .slider_wrap .decor .decor-dot-2 {
+  height: 4px;
+  width: 4px;
+  border-radius: 60%;
+  background-color: #616161;
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  transform: translate(-40%, -50%);
+}
+
+.slider .splide__arrows {
+  position: absolute;
+  right: 74px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.slider .splide__arrows .splide__arrow--prev {
+  bottom: 100% !important;
+  top: 0 !important;
+}
+
+.slider .splide__arrows .splide__arrow--prev[disabled] {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.slider .splide__arrows .splide__arrow--next {
+  bottom: 0 !important;
+}
+
+.slider .splide__arrows .splide__arrow--next[disabled] {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.slider .splide__arrows .splide__arrow {
+  width: 48px;
+  height: 48px;
+  border-radius: 0;
+  background-color: #D0122D;
+  opacity: 1;
+}
+
+.slider .splide__arrows .splide__arrow path {
+  fill: white;
+}
+
+.slider .splide__pagination .splide__pagination__page {
+  width: 16px;
+  height: 21px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 0;
+  transition: transform .2s linear;
+}
+
+.slider .splide__pagination .is-active {
+  background-color: #D0122D;
+  opacity: 1;
+  height: 21px;
+  transform: scale(1.45, 1);
+}
+
+
+.sl_1 {
+  background: url('../img/slider.jpg');
+  background-size: cover;
+
+}
+
+.sl_1_wrap {
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0px 45px 70px 105px;
+}
+
+
+.sl_header {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: start;
+  justify-content: center;
+  padding-top: 145px;
+
+  letter-spacing: 1px;
+}
+
+.sl_title {
+  font-size: 48px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  position: relative;
+}
+
+.sl_title::after {
+  content: '';
+  width: 60px;
+  height: 7px;
+  background: #D0122D;
+  position: absolute;
+  top: -15px;
+  border-radius: 25px;
+  left: 0px;
+}
+
+
+.sl_title::before {
+  content: '';
+  width: 60px;
+  height: 7px;
+  background: #D0122D;
+  position: absolute;
+  bottom: -20px;
+  border-radius: 25px;
+  right: -5px;
+}
+
+
+.sl_title span {
+  font-weight: 400;
+  display: block;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.sl_bot {
+  color: white;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.sl_bot ul {
+  list-style: none;
+  display: flex;
+  margin: 0 10px;
+  font-size: 14px;
+  position: relative;
+  margin: 0 0 0 118px;
+}
+
+
+
+.sl_bot ul p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  margin-left: 50px;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.sl_bot ul p::before {
+  content: '';
+  display: inline-block;
+  height: 7px;
+  width: 7px;
+  background: #888888;
+  position: absolute;
+  opacity: .4;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sl_bot ul::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 5px;
+  height: 45px;
+  width: 4px;
+  border-radius: 25px;
+  background: #D0122D;
+}
+
+.sl_bot .sl_bot_fist::before {
+  left: 10px;
+}
+
+.max-width {
+  max-width: 140px;
+  width: 100%;
+}
+
+.sl_btn {
+  max-width: 274px;
+  width: 100%;
+  height: 60px;
+  background: #D0122D;
+  color: white;
+  font-size: 16px;
+  font-weight: 900;
+  border: 0;
+  margin-top: 55px;
+  outline: none !important;
+  border-radius: 0px;
+}
+
+
+.staff_wrap {
+  padding-bottom: 40px;
+}
+
+.burger-toggle {
+  cursor: pointer;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+}
+
+.burger-toggle-wrap {
+  height: 7px;
+  width: 50px;
+  background-color: #D0122D;
+  border-radius: 25px;
+  position: relative;
+
+}
+
+.burger-toggle-wrap::before {
+  content: '';
+  height: 7px;
+  width: 50px;
+  background-color: #D0122D;
+  border-radius: 25px;
+  position: absolute;
+  bottom: -15px;
+}
+
+.burger-toggle-wrap::after {
+  content: '';
+  height: 7px;
+  width: 50px;
+  background-color: #D0122D;
+  border-radius: 25px;
+  position: absolute;
+  bottom: 15px;
+}
+
+.choice_car_img .img {
+  text-align: center;
+}
+
+
+
+.button_show_phone_wrap {
+  position: absolute;
+  top: calc(100% + 20px);
+  left: -103px;
+  color: black;
+  background: white;
+  border-top: 7px solid #D0122D;
+  z-index: 2;
+  width: 434px;
+  display: none;
+}
+
+.button_show_phone_wrap .wrapp {
+  width: 100%;
+  padding: 40px 50px 0px 50px;
+}
+
+
+.button_show_phone_wrap .title {
+  font-size: 36px;
+  margin-left: 0px;
+  margin-bottom: 50px;
+}
+
+.button_show_phone_wrap .title span {
+  bottom: 0;
+}
+
+.button_show_phone_wrap .block-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.button_show_phone_wrap .block-cont ul {
+  display: inline-block;
+}
+
+
+.button_show_phone_wrap .block-cont li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  border-bottom: 2px dotted rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 15px;
+  color: #616161;
+  padding-bottom: 10px;
+}
+
+.button_show_phone_wrap .block-cont img {
+  position: absolute;
+  top: -2px;
+  left: 0;
+}
+
+.button_show_phone_wrap .block-cont li:nth-child(1) img {
+  top: -7px;
+}
+
+.button_show_phone_wrap .block-cont li:nth-child(4) {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1920px) {
+  .container {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
+@media (max-width: 1920px) {
+  .slider .slider_wrap .decor {
+    display: none;
+  }
+
+  .drcor-dot-3-4 {
+    display: none;
+  }
+}
+
+@media (max-width: 1680px) {
+
+  .navigation_main .navigation_bar div {
+    margin-left: 22px;
+  }
+
+  .navigation .nav_all {
+    padding: 0 10px;
+  }
+
+  .tabs_content .tabs {
+    position: static;
+    margin: 10px auto;
+    width: 100%;
+  }
+
+  .tabs_content .tabs .tab-pane.active {
+    margin: 10px auto;
+  }
+
+  .tabs_content .tabs .nav {
+    justify-content: center;
+  }
+
+  .tabs_content .nav-pills .nav-item {
+    margin-right: 26px;
+    margin-bottom: 5px;
+  }
+
+  .price_car_block .price_car_calc {
+    margin: 25px auto 10px auto;
+  }
+
+  .choice_car .choice_car_img {
+    margin: 0 auto;
+  }
+
+  .price_car_info .price_car_info_body {
+    margin: 0 auto;
+  }
+
+  .car_case .block_car_case_body {
+    margin: 0 auto;
+  }
+
+  .staff .staff_block {
+    margin: 0 auto;
+  }
+
+  .question_and_answer .question_and_answer_body {
+    margin: 0 auto;
+  }
+
+  .carousel_reviews .carousel_reviews_wrap {
+    padding: 0;
+  }
+}
+
+@media (max-width: 1440px) {
+  .tabs_content .nav-pills .nav-item {
+    width: 28%;
+  }
+
+
+  .price_car_info_header div {
+    margin: 5px;
+    width: 30% !important;
+  }
+
+  .tabs_content .nav-pills .nav-item a {
+    width: 100% !important;
+  }
+
+  .navigation_main .navigation_bar {
+    padding: 0;
+  }
+
+  .navigation_main .navigation_bar div {
+    margin-left: 15px;
+  }
+
+  .navigation .nav_all .navigation_right {
+    margin-right: 25px;
+
+  }
+
+  .choice_car_img .block-cont {
+    margin-bottom: 15px;
+  }
+
+}
+
+@media (min-width: 1140px) {
+  .container {
+    max-width: 1920px !important;
+
+  }
+
+
+
+}
+
+@media (max-width: 1140px) {
+  .slider .splide__arrows .splide__arrow--prev {
+    top: -54px !important;
+  }
+
+  .slider .splide__arrows .splide__arrow--next {
+    bottom: -54px !important;
+  }
+
+  .slider .splide__arrows {
+    right: 30px;
+  }
+
+  .splide__pagination {
+    display: none;
+  }
+
+  .navigation {
+    padding: 0;
+  }
+
+  .navigation_main {
+    padding: 0;
+  }
+
+  .navigation .nav_all {
+    padding: 0;
+  }
+
+  .navigation_bar {
+    display: none !important;
+  }
+
+  .burger-toggle {
+    display: flex;
+  }
+
+  .choice_car .choice_car_img {
+    margin: 0;
+  }
+
+  .choice_car_img .block-cont {
+    margin-bottom: 15px;
+  }
+
+  .tabs_content .tabs .tab-pane.active {
+    flex-direction: column;
+    height: 100%;
+    padding: 15px 0;
+  }
+
+  .tabs_content {
+    height: 100%;
+  }
+
+  .tabs_content .tabs .tab-pane.active .tab-content-img {
+    padding: 10px 25px;
+  }
+
+  .choice_car {
+    margin-top: 0;
+
+  }
+
+  .title {
+    margin: 25px 0px 25px 0px;
+    font-size: 36px;
+  }
+
+  .choice_car .title {
+    margin: 25px 0px 25px 0px;
+    font-size: 36px;
+  }
+
+  .price_car_block .title {
+    margin-left: 0px;
+    font-size: 36px;
+  }
+
+  .price_car_info .title {
+    margin-left: 0px;
+    font-size: 36px;
+  }
+
+  .car_case .title {
+    margin-left: 0px;
+    font-size: 36px;
+  }
+
+  .carousel_reviews .title {
+    margin-left: 0px;
+  }
+
+  .price_car_block .price_car_calc .set_calc {
+    padding-right: 0px;
+    padding-bottom: 35px;
+  }
+
+  .price_car_block .price_car_calc .price_car,
+  .price_car_block .price_car_calc .repair_car,
+  .price_car_block .price_car_calc .engine_car,
+  .price_car_block .price_car_calc .age_car,
+  .price_car_block .price_car_calc .auction_car {
+    margin-bottom: 10px;
+  }
+
+  .price_car_info .price_car_info_header {
+    max-width: 690px;
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+  }
+
+
+}
+
+@media (max-width: 992px) {
+
+
+
+  .button_show_phone {
+    display: none !important;
+  }
+
+  .navigation_left span {
+    display: none;
+  }
+
+  .navigation_right span {
+    display: none;
+  }
+
+  .navigation_main .navigation_bar {
+    display: none;
+  }
+
+  .splide--ttb>.splide__pagination {
+    display: none !important;
+  }
+
+  .slider .splide__arrows {
+    display: none;
+  }
+
+  .tabs_content .tabs .tab-pane.active .tab-content-img span {
+    width: calc(100% - 15px);
+  }
+
+  .question_and_answer .question_and_answer_body .block {
+    max-width: 840px;
+    width: 100%;
+  }
+
+  .question_and_answer_img {
+    display: none;
+  }
+
+  .price_car_block .price_car_calc .get_calc {
+    box-shadow: none;
+    padding: 46px 0px 46px 0px;
+    margin-left: 0;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .engine_car {
+    flex-direction: column-reverse;
+  }
+
+  .engine_car span {
+    padding-top: 10px;
+  }
+
+  .block_fuel {
+    width: 100%;
+  }
+
+  .block_fuel div {
+    width: 33% !important;
+    padding: 10px 0 !important;
+  }
+
+  .price_car_block .price_car_calc {
+    padding: 38px 0px 50px 0;
+  }
+}
+
+@media (max-width: 460px) {
+  .price_car_block .price_car_calc .get_calc {
+    font-size: 13px;
+  }
+}
