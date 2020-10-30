@@ -138,9 +138,9 @@ $(document).ready(function () {
     dotsMove();
 
     $(window).resize(function() {
-        // location.reload();
-        // dotsMove();
-        // arrowMove();
+        location.reload();
+        dotsMove();
+        arrowMove();
     });
 
 

@@ -2555,6 +2555,23 @@ body {
 }
 
 @media(max-width: 576px) {
+
+  .navigation .button_style {
+    width: auto;
+    height: auto;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .navigation .button_style img {
+    display: none;
+  }
+
+  .group .menu {
+    text-align: center;
+    display: block;
+  }
+
   .title {
     font-size: 24px !important;
   }
@@ -2584,6 +2601,21 @@ body {
 
   .group .telephone .telephone_info {
     padding-top: 0;
+  }
+
+  .tabs_content .nav-pills .nav-item {
+    width: 43%;
+    margin-right: 5px;
+  }
+
+  .tabs_content .nav-pills .nav-item:nth-child(-n+5) {
+    margin-right: 5px;
+  }
+
+  .tabs_content .nav-pills .nav-item .nav-link {
+    font-size: 13px;
+    height: auto;
+    padding: 3px 0;
   }
 }
 
