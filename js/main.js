@@ -160,16 +160,29 @@ $(document).ready(function () {
         $(this).addClass('active');        
     })
 
+//  $('.button_style').click(function(){
+//         $('.button_style_wrap').css('display', 'flex');
+//         $('.order_phone').css('display', 'flex');
+
+//     })
 
 
-
-   
-        var div = $("#popup"); // тут указываем ID элемента
+    $(document).mouseup(function (e){ // событие клика по веб-документу
+        var div = $("#test"); // тут указываем ID элемента
         if (!div.is(e.target) // если клик был не по нашему блоку
             && div.has(e.target).length === 0) { // и не по его дочерним элементам
             div.hide(); // скрываем его
+            $('.button_style_wrap').hide();
         }
-     
 
+        
+    });
+   
+
+    //  $('.closed').click(function(){
+    //     $('.button_style_wrap').hide();
+    //     $('.order_phone').hide();
+        
+    // })
 
 });
